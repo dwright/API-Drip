@@ -3,6 +3,8 @@ Build.PL
 Changes
 lib/API/Drip/Request.pm
 MANIFEST			This list of files
+META.json
+META.yml
 README
 t/00-load.t
 t/manifest.t

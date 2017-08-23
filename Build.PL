@@ -15,10 +15,19 @@ my $builder = Module::Build->new(
     build_requires => {
         'Test::More' => '0',
     },
-    requires => {
-        #'ABC'              => '1.6',
-        #'Foo::Bar::Module' => '5.0401',
-    },
+    requires => { 'Carp'                       => 0,
+                  'Data::Printer'              => 0,
+                  'File::HomeDir'              => 0,
+                  'File::Spec'                 => 0,
+                  'HTTP::Request::Common'      => 0,
+                  'JSON'                       => 0,
+                  'LWP::UserAgent'             => 0,
+                  'Params::ValidationCompiler' => 0,
+                  'Readonly'                   => 0,
+                  'Types::Standard'            => 0,
+                  'URI'                        => 0,
+                  'YAML'                       => 0,
+        },
     add_to_cleanup     => [ 'API-Drip-*' ],
 );
 
