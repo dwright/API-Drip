@@ -31,11 +31,11 @@ API::Drip::Request - Perl interface to api.getdrip.com
 
 =head1 VERSION
 
-Version 0.01
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
@@ -137,7 +137,7 @@ sub do_request {
     my ($method, $endpoint, $content) = $request_validator->(@_);
 
     my $uri = URI->new($self->{DRIP_URI});
-    $uri->path_segments( $uri->path_segments, $self->{DRIP_ID}, $endpoint );
+    $uri->path_segments( $uri->path_segments, $self->{DRIP_ID}, split( '/', $endpoint) );
 
     $self->{debugger}->( 'Requesting: ' . $uri->as_string );
     my $request = HTTP::Request->new( $method => $uri->as_string, );
