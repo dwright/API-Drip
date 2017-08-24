@@ -4,7 +4,7 @@ use warnings;
 use Module::Build;
 
 my $builder = Module::Build->new(
-    module_name         => 'API::Drip',
+    module_name         => 'API::Drip::Request',
     license             => 'perl_5',
     dist_author         => q{Dan Wright <Dan@DWright.Org>},
     dist_version_from   => 'lib/API/Drip/Request.pm',
