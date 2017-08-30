@@ -1,5 +1,9 @@
 Revision history for API-Drip
 
+0.05    8/29/17
+        Added Github information to meta and updated bug reporting location.
+        Please submit an issue via Github.
+
 0.04    8/29/17
         Fixed tests
 

@@ -24,7 +24,10 @@ perldoc command.
 
 You can also look for information at:
 
-    RT, CPAN's request tracker (report bugs here)
+    Github repository (please report bugs here)
+        https://github.com/dwright/API-Drip
+
+    RT, CPAN's request tracker (if you send bugs here, it may be a long time before I see them)
         http://rt.cpan.org/NoAuth/Bugs.html?Dist=API-Drip
 
     AnnoCPAN, Annotated CPAN documentation
